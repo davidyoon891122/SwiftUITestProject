@@ -14,6 +14,7 @@
 		ADB700182B21A8330003E3C8 /* SwiftUITestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700172B21A8330003E3C8 /* SwiftUITestProjectTests.swift */; };
 		ADB700222B21A8330003E3C8 /* SwiftUITestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700212B21A8330003E3C8 /* SwiftUITestProjectUITests.swift */; };
 		ADB700242B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700232B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift */; };
+		ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700302B21A9E80003E3C8 /* CustomDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		ADB7001D2B21A8330003E3C8 /* SwiftUITestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB700212B21A8330003E3C8 /* SwiftUITestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestProjectUITests.swift; sourceTree = "<group>"; };
 		ADB700232B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADB700302B21A9E80003E3C8 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				ADB700082B21A8300003E3C8 /* ContentView.swift */,
 				ADB7000A2B21A8320003E3C8 /* Assets.xcassets */,
 				ADB7000C2B21A8320003E3C8 /* Preview Content */,
+				ADB700302B21A9E80003E3C8 /* CustomDivider.swift */,
 			);
 			path = SwiftUITestProject;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				ADB700092B21A8300003E3C8 /* ContentView.swift in Sources */,
 				ADB700072B21A8300003E3C8 /* SwiftUITestProjectApp.swift in Sources */,
+				ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
