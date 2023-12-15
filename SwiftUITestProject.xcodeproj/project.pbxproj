@@ -16,6 +16,7 @@
 		ADB700242B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700232B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift */; };
 		ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700302B21A9E80003E3C8 /* CustomDivider.swift */; };
 		ADCB300E2B2BCE5400E95314 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB300D2B2BCE5400E95314 /* Coordinator.swift */; };
+		ADCB30122B2BD83600E95314 /* DefaultDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB30112B2BD83600E95314 /* DefaultDivider.swift */; };
 		ADF0D72A2B27E18F00581108 /* NavigationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0D7292B27E18F00581108 /* NavigationTestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		ADB700232B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ADB700302B21A9E80003E3C8 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		ADCB300D2B2BCE5400E95314 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		ADCB30112B2BD83600E95314 /* DefaultDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDivider.swift; sourceTree = "<group>"; };
 		ADF0D7292B27E18F00581108 /* NavigationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				ADB700302B21A9E80003E3C8 /* CustomDivider.swift */,
+				ADCB30112B2BD83600E95314 /* DefaultDivider.swift */,
 			);
 			path = Divider;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				ADCB300E2B2BCE5400E95314 /* Coordinator.swift in Sources */,
 				ADF0D72A2B27E18F00581108 /* NavigationTestView.swift in Sources */,
 				ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */,
+				ADCB30122B2BD83600E95314 /* DefaultDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

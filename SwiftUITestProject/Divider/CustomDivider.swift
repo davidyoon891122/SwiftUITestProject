@@ -17,7 +17,7 @@ struct CustomDivider: View {
     let size: CGFloat
     let direction: DividerDirection
     
-    init(color: Color, size: CGFloat, direction: DividerDirection) {
+    init(color: Color = .gray, size: CGFloat = 1.0, direction: DividerDirection = .vertical) {
         self.color = color
         self.size = size
         self.direction = direction
