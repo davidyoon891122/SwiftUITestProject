@@ -23,8 +23,8 @@ struct NavigationTestView<Model>: View where Model: CoordinatorProtocol {
                 Text("Go to Page Two")
             }
             .navigationTitle("NavigationView")
+            .navigationViewStyle(.stack)
         }
-//        .navigationViewStyle(.stack)
     }
 }
 
