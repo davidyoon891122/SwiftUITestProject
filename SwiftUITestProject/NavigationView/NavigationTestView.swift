@@ -21,6 +21,11 @@ struct NavigationTestView<Model>: View where Model: CoordinatorProtocol {
                 isActive: $coordinator.isRootActive
             ) {
                 Text("Go to Page Two")
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .foregroundColor(.white)
+                    .background(.black)
+                    .cornerRadius(8.0)
+                    .padding()
             }
             .navigationTitle("NavigationView")
             .navigationViewStyle(.stack)
@@ -41,6 +46,7 @@ struct PageTwo<Model>: View where Model: CoordinatorProtocol {
                     .frame(maxWidth: .infinity, minHeight: 50)
                     .foregroundColor(.blue)
                     .background(Color.yellow)
+                    .cornerRadius(8.0)
                     .padding()
             })
             Spacer()
@@ -48,6 +54,11 @@ struct PageTwo<Model>: View where Model: CoordinatorProtocol {
                 destination: PageThree(coordinator: coordinator)
             ) {
                 Text("Go to Page Three")
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .foregroundColor(.white)
+                    .background(.black)
+                    .cornerRadius(8.0)
+                    .padding()
             }
         }
         .navigationTitle("Page Two")
@@ -70,6 +81,7 @@ struct PageThree<Model>: View where Model: CoordinatorProtocol {
                     .frame(maxWidth: .infinity, minHeight: 50)
                     .foregroundColor(.blue)
                     .background(Color.yellow)
+                    .cornerRadius(8.0)
                     .padding()
             })
             
@@ -79,6 +91,11 @@ struct PageThree<Model>: View where Model: CoordinatorProtocol {
                 coordinator.moveToRoot()
             }, label: {
                 Text("Back to root!")
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .foregroundColor(.white)
+                    .background(.black)
+                    .cornerRadius(8.0)
+                    .padding()
             })
         }
         .navigationTitle("Page Three")
