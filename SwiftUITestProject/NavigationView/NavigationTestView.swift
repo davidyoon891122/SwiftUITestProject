@@ -7,24 +7,30 @@
 
 import SwiftUI
 
-struct NavigationTestView: View {
-    @State var isActive: Bool = false
+struct NavigationTestView<Model>: View where Model: CoordinatorProtocol {
+    @ObservedObject private var coordinator: Model
+    
+    init(coordinator: Model) {
+        self.coordinator = coordinator
+    }
+    
     var body: some View {
         NavigationView {
             NavigationLink(
-                destination: PageTwo(rootIsActive: $isActive),
-                isActive: $isActive
+                destination: PageTwo(coordinator: coordinator),
+                isActive: $coordinator.isRootActive
             ) {
                 Text("Go to Page Two")
             }
             .navigationTitle("NavigationView")
         }
+//        .navigationViewStyle(.stack)
     }
 }
 
 
-struct PageTwo: View {
-    @Binding var rootIsActive: Bool
+struct PageTwo<Model>: View where Model: CoordinatorProtocol {
+    @ObservedObject var coordinator: Model
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack {
@@ -39,17 +45,20 @@ struct PageTwo: View {
             })
             Spacer()
             NavigationLink(
-                destination: PageThree(rootIsActive: $rootIsActive)
+                destination: PageThree(coordinator: coordinator)
             ) {
                 Text("Go to Page Three")
             }
         }
         .navigationTitle("Page Two")
+        .onAppear {
+            print("On page two isRootActive state: \(coordinator.isRootActive)")
+        }
     }
 }
 
-struct PageThree: View {
-    @Binding var rootIsActive: Bool
+struct PageThree<Model>: View where Model: CoordinatorProtocol {
+    @ObservedObject var coordinator: Model
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
@@ -67,15 +76,18 @@ struct PageThree: View {
             Spacer()
             
             Button(action: {
-                rootIsActive = false
+                coordinator.moveToRoot()
             }, label: {
                 Text("Back to root!")
             })
         }
         .navigationTitle("Page Three")
+        .onAppear {
+            print("On page three isRootActive state: \(coordinator.isRootActive)")
+        }
     }
 }
 
 #Preview {
-    NavigationTestView()
+    NavigationTestView(coordinator: Coordinator())
 }
