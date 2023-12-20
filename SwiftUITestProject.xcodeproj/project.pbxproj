@@ -15,8 +15,11 @@
 		ADB700222B21A8330003E3C8 /* SwiftUITestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700212B21A8330003E3C8 /* SwiftUITestProjectUITests.swift */; };
 		ADB700242B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700232B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift */; };
 		ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700302B21A9E80003E3C8 /* CustomDivider.swift */; };
+		ADB9A92F2B318A4C0052DBD4 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = ADB9A92E2B318A4C0052DBD4 /* SwiftUIIntrospect */; };
 		ADCB300E2B2BCE5400E95314 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB300D2B2BCE5400E95314 /* Coordinator.swift */; };
 		ADCB30122B2BD83600E95314 /* DefaultDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB30112B2BD83600E95314 /* DefaultDivider.swift */; };
+		ADD3169D2B303E8C003859D4 /* CheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3169C2B303E8B003859D4 /* CheckerView.swift */; };
+		ADD316A02B303F4F003859D4 /* CheckerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3169F2B303F4F003859D4 /* CheckerViewModel.swift */; };
 		ADF0D72A2B27E18F00581108 /* NavigationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0D7292B27E18F00581108 /* NavigationTestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,8 @@
 		ADB700302B21A9E80003E3C8 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		ADCB300D2B2BCE5400E95314 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		ADCB30112B2BD83600E95314 /* DefaultDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDivider.swift; sourceTree = "<group>"; };
+		ADD3169C2B303E8B003859D4 /* CheckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerView.swift; sourceTree = "<group>"; };
+		ADD3169F2B303F4F003859D4 /* CheckerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerViewModel.swift; sourceTree = "<group>"; };
 		ADF0D7292B27E18F00581108 /* NavigationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB9A92F2B318A4C0052DBD4 /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,7 @@
 				ADB7000C2B21A8320003E3C8 /* Preview Content */,
 				ADB700382B22CD6A0003E3C8 /* Divider */,
 				ADCB300C2B2BCD9F00E95314 /* NavigationView */,
+				ADD3169E2B303F43003859D4 /* Checker */,
 			);
 			path = SwiftUITestProject;
 			sourceTree = "<group>";
@@ -155,6 +162,15 @@
 			path = NavigationView;
 			sourceTree = "<group>";
 		};
+		ADD3169E2B303F43003859D4 /* Checker */ = {
+			isa = PBXGroup;
+			children = (
+				ADD3169C2B303E8B003859D4 /* CheckerView.swift */,
+				ADD3169F2B303F4F003859D4 /* CheckerViewModel.swift */,
+			);
+			path = Checker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +187,9 @@
 			dependencies = (
 			);
 			name = SwiftUITestProject;
+			packageProductDependencies = (
+				ADB9A92E2B318A4C0052DBD4 /* SwiftUIIntrospect */,
+			);
 			productName = SwiftUITestProject;
 			productReference = ADB700032B21A8300003E3C8 /* SwiftUITestProject.app */;
 			productType = "com.apple.product-type.application";
@@ -243,6 +262,9 @@
 				Base,
 			);
 			mainGroup = ADB7FFFA2B21A8300003E3C8;
+			packageReferences = (
+				ADB9A92D2B318A4C0052DBD4 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			productRefGroup = ADB700042B21A8300003E3C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD3169D2B303E8C003859D4 /* CheckerView.swift in Sources */,
 				ADB700092B21A8300003E3C8 /* ContentView.swift in Sources */,
+				ADD316A02B303F4F003859D4 /* CheckerViewModel.swift in Sources */,
 				ADB700072B21A8300003E3C8 /* SwiftUITestProjectApp.swift in Sources */,
 				ADCB300E2B2BCE5400E95314 /* Coordinator.swift in Sources */,
 				ADF0D72A2B27E18F00581108 /* NavigationTestView.swift in Sources */,
@@ -622,6 +646,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADB9A92D2B318A4C0052DBD4 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADB9A92E2B318A4C0052DBD4 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADB9A92D2B318A4C0052DBD4 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADB7FFFB2B21A8300003E3C8 /* Project object */;
 }
