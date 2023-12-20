@@ -16,6 +16,7 @@
 		ADB700242B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700232B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift */; };
 		ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700302B21A9E80003E3C8 /* CustomDivider.swift */; };
 		ADB9A92F2B318A4C0052DBD4 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = ADB9A92E2B318A4C0052DBD4 /* SwiftUIIntrospect */; };
+		ADB9A9312B3268F90052DBD4 /* ViewBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9A9302B3268F90052DBD4 /* ViewBuilderTest.swift */; };
 		ADCB300E2B2BCE5400E95314 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB300D2B2BCE5400E95314 /* Coordinator.swift */; };
 		ADCB30122B2BD83600E95314 /* DefaultDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB30112B2BD83600E95314 /* DefaultDivider.swift */; };
 		ADD3169D2B303E8C003859D4 /* CheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3169C2B303E8B003859D4 /* CheckerView.swift */; };
@@ -52,6 +53,7 @@
 		ADB700212B21A8330003E3C8 /* SwiftUITestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestProjectUITests.swift; sourceTree = "<group>"; };
 		ADB700232B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ADB700302B21A9E80003E3C8 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
+		ADB9A9302B3268F90052DBD4 /* ViewBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderTest.swift; sourceTree = "<group>"; };
 		ADCB300D2B2BCE5400E95314 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		ADCB30112B2BD83600E95314 /* DefaultDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDivider.swift; sourceTree = "<group>"; };
 		ADD3169C2B303E8B003859D4 /* CheckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				ADB700382B22CD6A0003E3C8 /* Divider */,
 				ADCB300C2B2BCD9F00E95314 /* NavigationView */,
 				ADD3169E2B303F43003859D4 /* Checker */,
+				ADB9A9302B3268F90052DBD4 /* ViewBuilderTest.swift */,
 			);
 			path = SwiftUITestProject;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD3169D2B303E8C003859D4 /* CheckerView.swift in Sources */,
+				ADB9A9312B3268F90052DBD4 /* ViewBuilderTest.swift in Sources */,
 				ADB700092B21A8300003E3C8 /* ContentView.swift in Sources */,
 				ADD316A02B303F4F003859D4 /* CheckerViewModel.swift in Sources */,
 				ADB700072B21A8300003E3C8 /* SwiftUITestProjectApp.swift in Sources */,
