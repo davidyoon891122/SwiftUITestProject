@@ -17,6 +17,9 @@
 		ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700302B21A9E80003E3C8 /* CustomDivider.swift */; };
 		ADB9A92F2B318A4C0052DBD4 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = ADB9A92E2B318A4C0052DBD4 /* SwiftUIIntrospect */; };
 		ADB9A9312B3268F90052DBD4 /* ViewBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9A9302B3268F90052DBD4 /* ViewBuilderTest.swift */; };
+		ADB9A9342B3272200052DBD4 /* HideTabBarViewIntrospec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9A9332B3272200052DBD4 /* HideTabBarViewIntrospec.swift */; };
+		ADB9A9372B3278010052DBD4 /* HideTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9A9362B3278010052DBD4 /* HideTabBarView.swift */; };
+		ADB9A9392B3278E90052DBD4 /* Extension+hideTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9A9382B3278E90052DBD4 /* Extension+hideTabbar.swift */; };
 		ADCB300E2B2BCE5400E95314 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB300D2B2BCE5400E95314 /* Coordinator.swift */; };
 		ADCB30122B2BD83600E95314 /* DefaultDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB30112B2BD83600E95314 /* DefaultDivider.swift */; };
 		ADD3169D2B303E8C003859D4 /* CheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3169C2B303E8B003859D4 /* CheckerView.swift */; };
@@ -54,6 +57,9 @@
 		ADB700232B21A8330003E3C8 /* SwiftUITestProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ADB700302B21A9E80003E3C8 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		ADB9A9302B3268F90052DBD4 /* ViewBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderTest.swift; sourceTree = "<group>"; };
+		ADB9A9332B3272200052DBD4 /* HideTabBarViewIntrospec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBarViewIntrospec.swift; sourceTree = "<group>"; };
+		ADB9A9362B3278010052DBD4 /* HideTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBarView.swift; sourceTree = "<group>"; };
+		ADB9A9382B3278E90052DBD4 /* Extension+hideTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+hideTabbar.swift"; sourceTree = "<group>"; };
 		ADCB300D2B2BCE5400E95314 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		ADCB30112B2BD83600E95314 /* DefaultDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDivider.swift; sourceTree = "<group>"; };
 		ADD3169C2B303E8B003859D4 /* CheckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerView.swift; sourceTree = "<group>"; };
@@ -107,7 +113,8 @@
 				ADB700382B22CD6A0003E3C8 /* Divider */,
 				ADCB300C2B2BCD9F00E95314 /* NavigationView */,
 				ADD3169E2B303F43003859D4 /* Checker */,
-				ADB9A9302B3268F90052DBD4 /* ViewBuilderTest.swift */,
+				ADB9A9322B32720A0052DBD4 /* ViewBuilder */,
+				ADB9A9352B3277F20052DBD4 /* HideTabBar */,
 			);
 			path = SwiftUITestProject;
 			sourceTree = "<group>";
@@ -154,6 +161,24 @@
 				ADB700202B21A8330003E3C8 /* SwiftUITestProjectUITests */,
 				ADB700042B21A8300003E3C8 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		ADB9A9322B32720A0052DBD4 /* ViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9A9302B3268F90052DBD4 /* ViewBuilderTest.swift */,
+			);
+			path = ViewBuilder;
+			sourceTree = "<group>";
+		};
+		ADB9A9352B3277F20052DBD4 /* HideTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9A9332B3272200052DBD4 /* HideTabBarViewIntrospec.swift */,
+				ADB9A9362B3278010052DBD4 /* HideTabBarView.swift */,
+				ADB9A9382B3278E90052DBD4 /* Extension+hideTabbar.swift */,
+			);
+			path = HideTabBar;
 			sourceTree = "<group>";
 		};
 		ADCB300C2B2BCD9F00E95314 /* NavigationView */ = {
@@ -329,13 +354,16 @@
 			files = (
 				ADD3169D2B303E8C003859D4 /* CheckerView.swift in Sources */,
 				ADB9A9312B3268F90052DBD4 /* ViewBuilderTest.swift in Sources */,
+				ADB9A9342B3272200052DBD4 /* HideTabBarViewIntrospec.swift in Sources */,
 				ADB700092B21A8300003E3C8 /* ContentView.swift in Sources */,
+				ADB9A9372B3278010052DBD4 /* HideTabBarView.swift in Sources */,
 				ADD316A02B303F4F003859D4 /* CheckerViewModel.swift in Sources */,
 				ADB700072B21A8300003E3C8 /* SwiftUITestProjectApp.swift in Sources */,
 				ADCB300E2B2BCE5400E95314 /* Coordinator.swift in Sources */,
 				ADF0D72A2B27E18F00581108 /* NavigationTestView.swift in Sources */,
 				ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */,
 				ADCB30122B2BD83600E95314 /* DefaultDivider.swift in Sources */,
+				ADB9A9392B3278E90052DBD4 /* Extension+hideTabbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +518,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +548,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -23,7 +23,7 @@ struct NavigationTestView<Model>: View where Model: CoordinatorProtocol {
                 Text("Go to Page Two")
                     .frame(maxWidth: .infinity, minHeight: 50)
                     .foregroundColor(.white)
-                    .background(.black)
+                    .background(Color.black)
                     .cornerRadius(8.0)
                     .padding()
             }
@@ -56,7 +56,7 @@ struct PageTwo<Model>: View where Model: CoordinatorProtocol {
                 Text("Go to Page Three")
                     .frame(maxWidth: .infinity, minHeight: 50)
                     .foregroundColor(.white)
-                    .background(.black)
+                    //.background(.black)
                     .cornerRadius(8.0)
                     .padding()
             }
@@ -93,7 +93,7 @@ struct PageThree<Model>: View where Model: CoordinatorProtocol {
                 Text("Back to root!")
                     .frame(maxWidth: .infinity, minHeight: 50)
                     .foregroundColor(.white)
-                    .background(.black)
+                    //.background(.black)
                     .cornerRadius(8.0)
                     .padding()
             })

@@ -80,9 +80,9 @@ struct CheckerView: View {
             }, label: {
                 Text("Next Button")
                     .frame(maxWidth: .infinity, minHeight: 50)
-                    .bold()
-                    .foregroundStyle(.white)
-                    .background(.black)
+                    //.bold()
+                    //.foregroundStyle(Color.white)
+                    .background(Color.black)
                     .cornerRadius(8)
                     .padding()
             })
