@@ -3,4 +3,54 @@
    uuid = "42D148FE-4A6F-410F-B8B8-C58C328F9DDA"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "403327E1-6A0B-4F5C-B31E-E4EF50D12793"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUITestProject/TabViewWithCoordinator/Coordinator/AccountCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "moveToSecondView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "403327E1-6A0B-4F5C-B31E-E4EF50D12793 - d5d0b9cf5af6a0fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUITestProject.AccountCoordinator.moveToSecondView() -&gt; ()"
+                  moduleName = "SwiftUITestProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/SwiftUITestProject/SwiftUITestProject/TabViewWithCoordinator/Coordinator/AccountCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "403327E1-6A0B-4F5C-B31E-E4EF50D12793 - d5d0b9cf5af6a0fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUITestProject.AccountCoordinator.moveToSecondView() -&gt; ()"
+                  moduleName = "SwiftUITestProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/SwiftUITestProject/SwiftUITestProject/TabViewWithCoordinator/Coordinator/AccountCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
