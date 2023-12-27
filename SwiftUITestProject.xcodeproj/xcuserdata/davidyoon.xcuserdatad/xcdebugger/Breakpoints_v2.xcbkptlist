@@ -49,6 +49,21 @@
                   endingLineNumber = "37"
                   offsetFromSymbolStart = "460">
                </Location>
+               <Location
+                  uuid = "403327E1-6A0B-4F5C-B31E-E4EF50D12793 - d5d0b9cf5af6a11e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUITestProject.AccountCoordinator.moveToSecondView() -&gt; ()"
+                  moduleName = "SwiftUITestProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davidyoon/iOSProject/SwiftUITestProject/SwiftUITestProject/TabViewWithCoordinator/Coordinator/AccountCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "436">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

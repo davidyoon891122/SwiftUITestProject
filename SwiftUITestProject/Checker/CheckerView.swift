@@ -7,90 +7,73 @@
 
 import SwiftUI
 
-struct CheckerView: View {
-    @ObservedObject var viewModel: CheckerViewModel = CheckerViewModel()
+struct CheckerView<Model>: View where Model: CheckerViewModelProtocol {
+    
+    @ObservedObject var viewModel: Model
+    
+    init(viewModel: Model) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             Button(action: {
                 viewModel.checkAll()
             }, label: {
-                HStack {
-                    Image(systemName: viewModel.isCheckAll ? "checkmark" : "")
-                        .resizable()
-                        .frame(width: 13, height: 13)
-                        .padding(4)
-                        .overlay(
-                            Rectangle()
-                                .stroke(.gray)
-                        )
-                    Text("Agree All")
-                }
+                Image(systemName: viewModel.isCheckAll ? "checkmark" : "")
+                    .resizable()
+                    .frame(width: 13, height: 13)
+                    .padding(4)
+                    .overlay(
+                        Rectangle()
+                            .stroke(.gray)
+                    )
+                Text("전체 동의")
             })
             
-            Button(action: {
-                viewModel.isFirstChecked.toggle()
-            }, label: {
-                HStack {
-                    Image(systemName: viewModel.isFirstChecked ? "checkmark" : "")
-                        .resizable()
-                        .frame(width: 13, height: 13)
-                        .padding(4)
-                        .overlay(
-                            Rectangle()
-                                .stroke(.gray)
-                        )
-                    Text("Fisrt")
+            VStack(alignment: .leading) {
+                Text(viewModel.topItemView.title)
+                ForEach(Array(viewModel.topItemView.content.enumerated()), id: \.element.id) { index, value in
+                    Button(action: {
+                        viewModel.topItemView.content[index].isCheck.toggle()
+                    }, label: {
+                        Image(systemName: value.isCheck ? "checkmark" : "")
+                            .resizable()
+                            .frame(width: 13, height: 13)
+                            .padding(4)
+                            .overlay(
+                                Rectangle()
+                                    .stroke(.gray)
+                            )
+                        Text(value.content)
+                    })
                 }
-            })
+            }
+            .padding(.bottom)
             
-            Button(action: {
-                viewModel.isSecondChecked.toggle()
-            }, label: {
-                HStack {
-                    Image(systemName: viewModel.isSecondChecked ? "checkmark" : "")
-                        .resizable()
-                        .frame(width: 13, height: 13)
-                        .padding(4)
-                        .overlay(
-                            Rectangle()
-                                .stroke(.gray)
-                        )
-                    Text("Second")
+            VStack(alignment: .leading) {
+                ForEach(Array(viewModel.bottomItemView.enumerated()), id:\.element.id) { index, item in
+                    Text(item.title)
+                    Button(action: {
+                        viewModel.bottomItemView[index].isCheck.toggle()
+                    }, label: {
+                        Image(systemName: item.isCheck ? "checkmark" : "")
+                            .resizable()
+                            .frame(width: 13, height: 13)
+                            .padding(4)
+                            .overlay(
+                                Rectangle()
+                                    .stroke(.gray)
+                            )
+                        Text(item.content)
+                    })
+                    .padding(.bottom)
                 }
-            })
-            
-            Button(action: {
-                viewModel.isThirdChecked.toggle()
-            }, label: {
-                HStack {
-                    Image(systemName: viewModel.isThirdChecked ? "checkmark" : "")
-                        .resizable()
-                        .frame(width: 13, height: 13)
-                        .padding(4)
-                        .overlay(
-                            Rectangle()
-                                .stroke(.gray)
-                        )
-                    Text("Third")
-                }
-            })
-            
-            Button(action: {
-                print("Next button")
-            }, label: {
-                Text("Next Button")
-                    .frame(maxWidth: .infinity, minHeight: 50)
-                    //.bold()
-                    //.foregroundStyle(Color.white)
-                    .background(Color.black)
-                    .cornerRadius(8)
-                    .padding()
-            })
-            .disabled(!viewModel.isCheckAll)
+            }
         }
     }
 }
 
 #Preview {
-    CheckerView()
+    CheckerView(viewModel: CheckerViewModel())
 }
