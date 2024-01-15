@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            CheckerView(viewModel: CheckerViewModel())
-        }
+        CustomPickerView(viewModel: CustomPickerViewModel())
     }
 }
 

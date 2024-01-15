@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD3EF4A92B438F9F0096DD42 /* EquatableTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF4A82B438F9F0096DD42 /* EquatableTestView.swift */; };
+		AD3EF4B22B43D5150096DD42 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF4B12B43D5150096DD42 /* CustomPickerView.swift */; };
+		AD3EF4B42B43D56A0096DD42 /* CustomPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF4B32B43D56A0096DD42 /* CustomPickerViewModel.swift */; };
 		ADB700072B21A8300003E3C8 /* SwiftUITestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700062B21A8300003E3C8 /* SwiftUITestProjectApp.swift */; };
 		ADB700092B21A8300003E3C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700082B21A8300003E3C8 /* ContentView.swift */; };
 		ADB7000B2B21A8320003E3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB7000A2B21A8320003E3C8 /* Assets.xcassets */; };
@@ -53,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD3EF4A82B438F9F0096DD42 /* EquatableTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableTestView.swift; sourceTree = "<group>"; };
+		AD3EF4B12B43D5150096DD42 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		AD3EF4B32B43D56A0096DD42 /* CustomPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewModel.swift; sourceTree = "<group>"; };
 		ADB700032B21A8300003E3C8 /* SwiftUITestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB700062B21A8300003E3C8 /* SwiftUITestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestProjectApp.swift; sourceTree = "<group>"; };
 		ADB700082B21A8300003E3C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +115,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD05D77F2B5509C1008F7C81 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AD3EF4B12B43D5150096DD42 /* CustomPickerView.swift */,
+				AD3EF4B32B43D56A0096DD42 /* CustomPickerViewModel.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		AD3EF4AC2B43D4E40096DD42 /* Equatable */ = {
+			isa = PBXGroup;
+			children = (
+				AD3EF4A82B438F9F0096DD42 /* EquatableTestView.swift */,
+			);
+			path = Equatable;
+			sourceTree = "<group>";
+		};
 		ADB700042B21A8300003E3C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +155,8 @@
 				ADB9A9322B32720A0052DBD4 /* ViewBuilder */,
 				ADB9A9352B3277F20052DBD4 /* HideTabBar */,
 				ADB9A9A42B341A970052DBD4 /* TabViewWithCoordinator */,
+				AD3EF4AC2B43D4E40096DD42 /* Equatable */,
+				AD05D77F2B5509C1008F7C81 /* PickerView */,
 			);
 			path = SwiftUITestProject;
 			sourceTree = "<group>";
@@ -427,6 +452,7 @@
 				ADB9A9B22B341E060052DBD4 /* MainCoordinator.swift in Sources */,
 				ADB9A9B42B341E200052DBD4 /* AccountCoordinator.swift in Sources */,
 				ADB700072B21A8300003E3C8 /* SwiftUITestProjectApp.swift in Sources */,
+				AD3EF4A92B438F9F0096DD42 /* EquatableTestView.swift in Sources */,
 				ADCB300E2B2BCE5400E95314 /* Coordinator.swift in Sources */,
 				ADB9A9AA2B341AC70052DBD4 /* SettingsView.swift in Sources */,
 				ADB9A9AC2B341B180052DBD4 /* TabViewCoordinator.swift in Sources */,
@@ -436,6 +462,8 @@
 				ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */,
 				ADCB30122B2BD83600E95314 /* DefaultDivider.swift in Sources */,
 				ADB9A9392B3278E90052DBD4 /* Extension+hideTabbar.swift in Sources */,
+				AD3EF4B42B43D56A0096DD42 /* CustomPickerViewModel.swift in Sources */,
+				AD3EF4B22B43D5150096DD42 /* CustomPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
