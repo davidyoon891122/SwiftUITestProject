@@ -10,6 +10,8 @@
 		AD3EF4A92B438F9F0096DD42 /* EquatableTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF4A82B438F9F0096DD42 /* EquatableTestView.swift */; };
 		AD3EF4B22B43D5150096DD42 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF4B12B43D5150096DD42 /* CustomPickerView.swift */; };
 		AD3EF4B42B43D56A0096DD42 /* CustomPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EF4B32B43D56A0096DD42 /* CustomPickerViewModel.swift */; };
+		AD79C51D2B6081B0007ED45D /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C51C2B6081B0007ED45D /* Extension+Color.swift */; };
+		AD79C5202B6082B2007ED45D /* ColorTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79C51F2B6082B2007ED45D /* ColorTestView.swift */; };
 		ADB700072B21A8300003E3C8 /* SwiftUITestProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700062B21A8300003E3C8 /* SwiftUITestProjectApp.swift */; };
 		ADB700092B21A8300003E3C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB700082B21A8300003E3C8 /* ContentView.swift */; };
 		ADB7000B2B21A8320003E3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB7000A2B21A8320003E3C8 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		AD3EF4A82B438F9F0096DD42 /* EquatableTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableTestView.swift; sourceTree = "<group>"; };
 		AD3EF4B12B43D5150096DD42 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
 		AD3EF4B32B43D56A0096DD42 /* CustomPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewModel.swift; sourceTree = "<group>"; };
+		AD79C51C2B6081B0007ED45D /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		AD79C51F2B6082B2007ED45D /* ColorTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestView.swift; sourceTree = "<group>"; };
 		ADB700032B21A8300003E3C8 /* SwiftUITestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB700062B21A8300003E3C8 /* SwiftUITestProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestProjectApp.swift; sourceTree = "<group>"; };
 		ADB700082B21A8300003E3C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +136,14 @@
 			path = Equatable;
 			sourceTree = "<group>";
 		};
+		AD79C51E2B6082A3007ED45D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD79C51C2B6081B0007ED45D /* Extension+Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		ADB700042B21A8300003E3C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +169,8 @@
 				ADB9A9A42B341A970052DBD4 /* TabViewWithCoordinator */,
 				AD3EF4AC2B43D4E40096DD42 /* Equatable */,
 				AD05D77F2B5509C1008F7C81 /* PickerView */,
+				AD79C51E2B6082A3007ED45D /* Extension */,
+				AD79C51F2B6082B2007ED45D /* ColorTestView.swift */,
 			);
 			path = SwiftUITestProject;
 			sourceTree = "<group>";
@@ -448,6 +462,7 @@
 				ADB700092B21A8300003E3C8 /* ContentView.swift in Sources */,
 				ADB9A9B62B341E2D0052DBD4 /* SettingsCoordinator.swift in Sources */,
 				ADB9A9372B3278010052DBD4 /* HideTabBarView.swift in Sources */,
+				AD79C51D2B6081B0007ED45D /* Extension+Color.swift in Sources */,
 				ADD316A02B303F4F003859D4 /* CheckerViewModel.swift in Sources */,
 				ADB9A9B22B341E060052DBD4 /* MainCoordinator.swift in Sources */,
 				ADB9A9B42B341E200052DBD4 /* AccountCoordinator.swift in Sources */,
@@ -461,6 +476,7 @@
 				ADF0D72A2B27E18F00581108 /* NavigationTestView.swift in Sources */,
 				ADB700312B21A9E80003E3C8 /* CustomDivider.swift in Sources */,
 				ADCB30122B2BD83600E95314 /* DefaultDivider.swift in Sources */,
+				AD79C5202B6082B2007ED45D /* ColorTestView.swift in Sources */,
 				ADB9A9392B3278E90052DBD4 /* Extension+hideTabbar.swift in Sources */,
 				AD3EF4B42B43D56A0096DD42 /* CustomPickerViewModel.swift in Sources */,
 				AD3EF4B22B43D5150096DD42 /* CustomPickerView.swift in Sources */,
